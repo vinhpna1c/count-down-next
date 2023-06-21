@@ -12,13 +12,13 @@ export default function Home() {
   const [remainSeconds,setRemainSeconds]=useState<number>(calculateRemainTime(DATE_TIME_TRIP)/1000);
   useEffect(()=>{
     const coundownTimer= setInterval(()=>{
-      console.log("Remain: "+ remainSeconds)
+
       const newDiff=calculateRemainTime(DATE_TIME_TRIP)/1000
-      console.log("Diff: "+newDiff)
+  
       setRemainSeconds(newDiff);
     },1000);
     return ()=>{
-      console.log("Call clean up function");
+
       clearInterval(coundownTimer);
     }
   },[]);

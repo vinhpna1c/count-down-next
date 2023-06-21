@@ -5,9 +5,7 @@ type RemainTimeType=[
     seconds:number,
 ];
 const calculateRemainTime=(end:number)=>{
-    console.log("End date"+(new Date(end)).toISOString())
-    console.log("End: "+end)
-    console.log("Now: "+Date.now())
+
     return end- Date.now();
 }
 
