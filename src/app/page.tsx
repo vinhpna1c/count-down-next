@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import TimeElement from './components/time_element'
 import { calculateRemainTime, useDateDiff } from './handler/time_handler';
+import { getSettingsData } from './handler/config_handler';
 
 const DATE_TIME_TRIP=(new Date(2023,5,24)).getTime();
 
@@ -10,6 +11,10 @@ const TRIP_NAME="BINH THUAN WEEKEND TRIP"
 
 export default function Home() {
   const [remainSeconds,setRemainSeconds]=useState<number>(calculateRemainTime(DATE_TIME_TRIP)/1000);
+  useEffect(()=>{
+    const settings=getSettingsData();
+    console.log(JSON.stringify(settings))
+  },[])
   useEffect(()=>{
     const coundownTimer= setInterval(()=>{
 
