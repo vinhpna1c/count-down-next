@@ -7,7 +7,7 @@ import { getSettingsData } from './handler/config_handler';
 
 const DATE_TIME_TRIP=(new Date(2024,3,23,14,0,0)).getTime();
 
-const TRIP_NAME="BINH THUAN WEEKEND TRIP"
+const TRIP_NAME="SATURDAY PARTY"
 
 export default function Home() {
   const [remainSeconds,setRemainSeconds]=useState<number>(calculateRemainTime(DATE_TIME_TRIP)/1000);
