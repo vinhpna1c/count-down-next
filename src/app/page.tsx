@@ -5,7 +5,7 @@ import TimeElement from './components/time_element'
 import { calculateRemainTime, useDateDiff } from './handler/time_handler';
 import { getSettingsData } from './handler/config_handler';
 
-const DATE_TIME_TRIP=(new Date(2023,5,24)).getTime();
+const DATE_TIME_TRIP=(new Date(2024,3,23,14,0,0)).getTime();
 
 const TRIP_NAME="BINH THUAN WEEKEND TRIP"
 
