@@ -36,7 +36,7 @@ export default function Home() {
       <div className=''
       // style={{backgroundImage:'url("/images/zoom_background.jpg")',}}
       >
-        <img className='w-full absolute top-0 left-0' src={'/images/sparkling_background.jpg'} alt={''} />
+        <img className='w-full absolute top-0 left-0' src={'/images/party_background.gif'} alt={''} />
 
         <div className='w-full absolute top-0 left-0 mt-60 flex justify-center'>
           <div className='flex flex-col items-center w-full mx-80 rounded-2xl bg-slate-300 bg-opacity-20  px-10 py-6 shadow-xl'>
