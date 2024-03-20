@@ -5,8 +5,8 @@ import { Inter, Oswald, Raleway } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 const oswald = Oswald({ subsets: ['latin'] })
 export const metadata = {
-  title: 'Count Down Trip',
-  description: 'Trip to Binh Thuan with NVT at weekend',
+  title: 'Party Count Down',
+  description: 'Count down for saturday party',
 }
 
 export default function RootLayout({
